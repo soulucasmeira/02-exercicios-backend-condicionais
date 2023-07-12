@@ -1,0 +1,2 @@
+const diaDaSemana = 10;
+
