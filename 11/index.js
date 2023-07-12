@@ -8,3 +8,12 @@ const mesesDecorridos = 12;
 const totalJaPagoPeloAluno = 1000000;
 
 
+let valorDaParcela = 0;
+if (mesesDecorridos >= 60 || totalJaPagoPeloAluno >= 1800000) {
+    console.log("Você não deve mais nada.")
+} else if (rendaMensalEmCentavos > 200000) {
+    valorDaParcela = rendaMensalEmCentavos * 0.0018;
+    console.log(`O valor da parcela desse mês é R$${valorDaParcela.toFixed(2)} reais.`)
+} else {
+    console.log("Você não precisa pagar ainda, já que o valor da sua renda mensal é menor que R$2.000,00")
+}
